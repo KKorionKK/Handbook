@@ -10,7 +10,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
@@ -21,16 +21,41 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button2"
+        android:id="@+id/task1_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_light"
+        android:paddingStart="20dp"
+        android:text="Задание 1"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/task2_button"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_light"
             android:paddingStart="20dp"
-            android:text="Задание 1"
+            android:text="Задание 2"
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textSize="14sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/dataText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </ScrollView>
+
     </LinearLayout>
 
 </RelativeLayout>
