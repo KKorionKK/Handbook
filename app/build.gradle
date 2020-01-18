@@ -16,13 +16,17 @@ android {
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.02"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
         python {
-            buildPython "py -3.7"
+            pip {
+                install "wiktionaryparser"
+                install "pywiktionary"
+            }
+            buildPython "python3.6"
         }
     }
     buildTypes {

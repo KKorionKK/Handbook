@@ -49,6 +49,7 @@ public class HomeFragment extends Fragment {
                 if (! Python.isStarted()) {
                     Python.start(new AndroidPlatform(getActivity()));
                 }
+                // this should be in AsyncTask
                 Python py = Python.getInstance();
                 PyObject pyf = py.getModule("parse");
                 PyObject obj = pyf.callAttr("wikiaParsing");
