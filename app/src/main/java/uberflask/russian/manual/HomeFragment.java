@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment {
                 PyObject pyf = py.getModule("parse");
                 PyObject obj = pyf.callAttr("wikiaParsing");
 
-                Toast.makeText(getActivity(), obj.toString(), Toast.LENGTH_SHORT).show();
+                data.setText(obj.toString());
             }
         });
         }
